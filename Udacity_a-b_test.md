@@ -85,9 +85,11 @@ I chose 75% since we shouldn't be concerned about too many students being expose
 ## Experiment Analysis
 ### Sanity Checks
 __Number of Cookies__
+
 | Control | Experiment |
 |---------|------------|
 | 345543  | 344660     |
+
 ```
 Expected proportion = 0.5
 Observed proportion = 0.5006
@@ -98,9 +100,11 @@ Lower Bound = 0.5 - 1.96*0.0012 = 0.4976
 Observed Proportion within bounds? Yes
 ```
 __Number of Clicks__
+
 | Control | Experiment |
 |---------|------------|
 | 28378 |28325|
+
 ```
 Expected proportion = 0.5
 Observed difference = 0.5005
@@ -111,9 +115,11 @@ Lower Bound = 0.5 - 1.96*0.00052 = 0.4895
 Observed Proportion within bounds? Yes
 ```
 __Click Through Probability__
+
 | Control | Experiment |
 |---------|------------|
 | 0.050046 | 0.050078|
+
 ```
 Expected difference = 0
 Observed difference = -0.00003
@@ -125,15 +131,19 @@ Observed Proportion within bounds? Yes
 ```
 
 ### Results Analysis
+
 |             | Control | Experiment |
 |-------------|---------|------------|
 | Clicks      | 17293   | 17260      |
 | Enrollments | 3785    | 3423       |
 | Payments    | 2033    | 1945       |
+
 __Gross Conversion__
+
 | Control | Experiment |
 |---------|------------|
 | 0.2188 | 0.1983|
+
 ```
 Null Hypothesis - Difference = 0
 Observed difference = -0.0206
@@ -146,9 +156,11 @@ Statistically Significant?(CI doesn't include 0) YES
 Practicallly Significant?(CI doesn't include dmin ± .01) YES 
 ```
 __Retention__
+
 | Control | Experiment |
 |---------|------------|
 | 0.5371 | 0.5682|
+
 ```
 Null Hypothesis - Difference = 0
 Observed difference = 0.0311
@@ -161,9 +173,11 @@ Statistically Significant? (CI doesn't include 0) YES
 Practicallly Significant? (CI doesn't include dmin ± .01) NO
 ```
 __Net Conversion__
+
 | Control | Experiment |
 |---------|------------|
 | 0.1176 | 0.1127|
+
 ```
 Null Hypothesis - Difference = 0
 Observed difference = -0.0049
@@ -177,27 +191,33 @@ Practicallly Significant? (CI doesn't include dmin ± .01) NO
 ```
 ### Sign Tests
 __Gross Conversion__
+
 | Successes/Total Trials|
 |------------|
 | 4/23|
+
 ```
 Assumed Probability = 0.5
 Two-Tail P Value = .0026
 Statistically/Practically Significant? (P Value < α/2(.025)) YES
 ```
 __Retention__
+
 | Successes/Total Trials|
 |------------|
 | 13/23|
+
 ```
 Assumed Probability = 0.5
 Two-Tail P Value = 0.6776 
 Statistically/Practically Significant? (P Value < α/2(.025)) NO
 ```
 __Net Conversion__
+
 | Successes/Total Trials|
 |------------|
 | 10/23|
+
 ```
 Assumed Probability = 0.5
 Two-Tail P Value = 0.6776 
@@ -225,7 +245,11 @@ The metrics I would measure would be:
 ----
 ### References
 [Experiment Background](https://docs.google.com/document/u/1/d/1aCquhIqsUApgsxQ8-SQBAigFDcfWVVohLEXcV6jWbdI/pub?embedded=True)
+
 [Udacity's Course](https://www.udacity.com/course/ab-testing--ud257)
+
 [Sample Size Calculator](http://www.evanmiller.org/ab-testing/sample-size.html)
+
 [Baseline Udacity Values](https://docs.google.com/spreadsheets/d/1MYNUtC47Pg8hdoCjOXaHqF-thheGpUshrFA21BAJnNc/edit#gid=0)
+
 [Data](https://docs.google.com/spreadsheets/d/1Mu5u9GrybDdska-ljPXyBjTpdZIUev_6i7t4LRDfXM8/edit#gid=0)
